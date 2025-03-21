@@ -29,7 +29,6 @@ languageName = "English"
   images = []
 
   # Header config
-  # 页面头部导航栏配置
   [params.header]
     # desktop header mode ["fixed", "normal", "auto"]
     desktopMode = "auto"
@@ -41,7 +40,7 @@ languageName = "English"
       logo = ""
       # title name
       name = "angelofailla.com"
-      description = "foo"
+      description = "Personal site of Angelo Failla, aka pallotron"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -52,16 +51,14 @@ languageName = "English"
   # Home page config
   [params.home]
     # amount of RSS pages
-    # RSS 文章数目
     rss = 10
     # Home page profile
-    # 主页个人信息
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = "pallotron@gmail.com"
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "https://gravatar.com/pallotron"
       # title shown in home page (HTML format is supported)
       title = "Welcome to my homepage, my name is Angelo Failla."
       # subtitle shown in home page (HTML format is supported)
@@ -73,11 +70,9 @@ languageName = "English"
       # disclaimer (HTML format is supported)
       disclaimer = ""
     # Home page posts
-    # 主页文章列表
     [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
-      # 主页每页显示文章数量
       paginate = 6
 
   [params.footer]
@@ -112,82 +107,10 @@ languageName = "English"
     X = "pallotron"
     Instagram = "pallotron"
     Facebook = "pallotron"
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
     Flickr = "pallotron"
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
     Strava = "25038229"
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki = ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe = ""
-    Malt = ""
-    TikTok = ""
-    TryHackMe = ""
-    Codeberg = ""
-    HuggingFace = ""
     Threads = "pallotron"
     Email = "pallotron@gmail.com"
-    Phone = ""
-    RSS = ""
 
 # Menu config
 [menu]
@@ -204,7 +127,7 @@ languageName = "English"
     title = ""
   [[menu.main]]
     weight = 2
-    identifier = "public_talks"
+    identifier = "Public talks"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -212,7 +135,7 @@ languageName = "English"
     name = "Public talks"
     url = "/public_talks/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "The list of all my public talks"
   [[menu.main]]
     weight = 3
     identifier = "posts"
@@ -231,14 +154,6 @@ languageName = "English"
     post = ""
     name = "Tags"
     url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 5
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
     title = ""
 
 # Markup related configuration in Hugo
