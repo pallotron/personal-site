@@ -62,7 +62,7 @@ languageName = "English"
       # title shown in home page (HTML format is supported)
       title = "Welcome to my homepage, my name is Angelo Failla."
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "You can also find me on these social:"
+      subtitle = "More info about me in the <a href='/about/'>About me page</a>. You can also find me on these social:"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
@@ -76,7 +76,7 @@ languageName = "English"
       paginate = 6
 
   [params.footer]
-    enable = true
+    enable = false
     # Custom content (HTML format is supported)
     custom = ""
     # whether to show Hugo and theme info
@@ -118,7 +118,7 @@ languageName = "English"
     weight = 1
     identifier = "about"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+    pre = "👋"
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "About me"
@@ -129,7 +129,7 @@ languageName = "English"
     weight = 2
     identifier = "Public talks"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+    pre = "🎤"
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Public talks"
@@ -138,9 +138,20 @@ languageName = "English"
     title = "The list of all my public talks"
   [[menu.main]]
     weight = 3
+    identifier = "projects"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = "️⚙"
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Projects"
+    url = "/projects/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 4
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+    pre = "🗓️"
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Posts"
@@ -148,9 +159,9 @@ languageName = "English"
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
-    weight = 4
+    weight = 5
     identifier = "tags"
-    pre = ""
+    pre = "🏷️"
     post = ""
     name = "Tags"
     url = "/tags/"
@@ -162,3 +173,34 @@ languageName = "English"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+# Search config
+[params.search]
+  enable = true
+  # type of search engine ["lunr", "algolia"]
+  type = "lunr"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  # max number of results length
+  maxResultLength = 10
+  # snippet length of the result
+  snippetLength = 30
+  # HTML tag name of the highlight part in results
+  highlightTag = "em"
+  # whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = 'tags'

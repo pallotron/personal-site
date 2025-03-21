@@ -1,4 +1,4 @@
 ---
-title: "Public talks"
-draft: false
+title: "🎤 Public talks"
+layout: public_talks
 ---

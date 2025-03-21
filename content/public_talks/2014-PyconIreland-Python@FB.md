@@ -6,7 +6,7 @@ title: 'Python@FB'
 
 🏢 Where: Pycon Ireland 2014, Dublin
 
-🌎 Conference official website: https://www.python.org/events/python-events/149/
+🌎 Conference official website: <https://www.python.org/events/python-events/149/>
 
 📊 [Slides](/slides/pycon2014.pdf)
 
