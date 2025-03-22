@@ -39,15 +39,18 @@ I used it as an excuse to learn some ObjectiveC.
 
 `dhcplb` is Meta's implementation of:
 
-* a DHCP v4/v6 relayer with load balancing capabilities
-* a DHCP v4/v6 server framework
+- a DHCP v4/v6 relayer with load balancing capabilities
+- a DHCP v4/v6 server framework
 
-Meta currently uses it in production, and it's deployed at global scale
-across all of the data centers.
+Meta currently uses it in production, and it's deployed at global scale across all of the data centers.
 It drives bare metal provisioning of all machines being ingested, moved and decommissioned in the fleet.
 It is based on [@insomniacslk](https://github.com/insomniacslk) [dhcp library](https://github.com/insomniacslk/dhcp).
 
-* [Meta engineering blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/)
+The story of this project is pretty significant.
+In 2014 I setup redoing the entire DHCP production infra, we needed something more dynamic.
+Since the beginning Facebook DHCP infra was based on the standard ISC `dhcpd`
+
+- [Meta engineering blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/)
 
 ### fbtftp
 
