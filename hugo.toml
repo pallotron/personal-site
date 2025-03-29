@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://angelofailla.com/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -16,7 +16,7 @@ enableEmoji = true
 # site default theme ["auto", "light", "dark"]
 defaultTheme = "auto"
 # public git repo url only then enableGitInfo is true
-gitRepo = ""
+gitRepo = "https://github.com/pallotron/site"
 # which hash function used for SRI, when empty, no SRI is used
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
