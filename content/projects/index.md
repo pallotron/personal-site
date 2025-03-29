@@ -52,10 +52,14 @@ Since the beginning Facebook DHCP infra was based on the standard ISC `dhcpd`
 
 - [Meta engineering blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/)
 
-### fbtftp
+### fbtftp ([Github repo](https://github.com/facebookarchive/fbtftp)
 
 Dynamic TFTP server written in Python3 that was used in Meta/Facebook datacenters (now replaced).
+Allow you to configure hooks and serve files dynamically based on code you write.
+I presented about it at [EuroPython, Bilbao](/public_talks/2016-europython-fbtftp/)
 
-### fbender
+### fbender ([Github repo](https://github.com/facebookarchive/fbender))
 
 Load testing command line tool for generic network protocols.
+Expands over the Pinterest Bender library and add some features to it.
+Worked on it with my summer intern of 2018. It was used to perform load testing of DHCP and DNS infra.

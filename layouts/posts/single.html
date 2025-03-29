@@ -19,15 +19,16 @@
     {{- end -}}
 
     <article class="page single">
-        {{- /* Title */ -}}
-        <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
-
+        <br>
         {{ with .Params.featured_image }}
             {{ with $.Resources.Get . }}
                 {{ $resized := .Resize "600x" }}
                 <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image">
             {{ end }}
         {{ end }}
+
+        {{- /* Title */ -}}
+        <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
 
         {{- /* Subtitle */ -}}
         {{- with $params.subtitle -}}
