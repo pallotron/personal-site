@@ -21,7 +21,7 @@ gitRepo = "https://github.com/pallotron/site"
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
 # date format
-dateFormat = "2006-01-02"
+dateFormat = "Monday, 02-Jan-06 15:04:05 MST"
 # website title for Open Graph and Twitter Cards
 title = "angelofailla.com"
 # website description for RSS, SEO, Open Graph and Twitter Cards
