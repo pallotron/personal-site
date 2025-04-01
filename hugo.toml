@@ -190,6 +190,15 @@ post = ""
 name = "Tags"
 url = "/tags/"
 title = ""
+[[menu.main]]
+weight = 6
+identifier = "rss"
+pre = "️<img src='/rss-feeds.webp' width='16' height='16' />"
+post = ""
+name = "RSS"
+url = "/index.xml"
+title = ""
+
 
 # Markup related configuration in Hugo
 [markup]
@@ -234,10 +243,10 @@ iconColor = "#5bbad5"
 tileColor = "#da532c"
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
-page = ["HTML", "MarkDown"]
-section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
+home = ['html', 'rss']
+section = ['html', 'rss']
+taxonomy = ['html']
+term = ['html']
 
 [taxonomies]
 tag = 'tags'
