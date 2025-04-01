@@ -91,6 +91,10 @@ since = 2025
 # license info (HTML format is supported)
 license = ""
 
+[services]
+[services.disqus]
+shortname = 'pallotron'
+
 [params.page]
 author = "pallotron"
 
@@ -101,6 +105,14 @@ enable = true
 keepStatic = false
 # whether to make the table of the contents in the sidebar automatically collapsed
 auto = true
+
+[params.page.comment]
+enable = true
+# Disqus comment config (https://disqus.com/)
+[params.page.comment.disqus]
+enable = true
+# Disqus shortname to use Disqus in posts
+shortname = "pallotron"
 
 [params.social]
 GitHub = "pallotron"
