@@ -22,13 +22,6 @@
         <a href="{{ .RelPermalink }}">{{ .Title | emojify }}</a>
     </h1>
 
-    {{ with .Params.featured_image }}
-        {{ with $.Resources.Get . }}
-            {{ $resized := .Resize "300x" }}
-            <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image">
-        {{ end }}
-    {{ end }}
-
     {{- /* Meta */ -}}
     <div class="post-meta">
         {{- $author := $params.author | default .Site.Params.Author.name | default (T "author") -}}
@@ -58,6 +51,14 @@
 
     {{- /* Summary content */ -}}
     <div class="content">
+        {{ with .Params.featured_image }}
+            {{ with $.Resources.Get . }}
+                {{ $resized := .Resize "200x" }}
+                <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image" style="border: solid">
+                <br/>
+            {{ end }}
+        {{ end }}
+
         {{- with .Summary -}}
             {{- dict "Content" . "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
         {{- else -}}

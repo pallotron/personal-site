@@ -11,22 +11,25 @@
     {{- end -}}
 
     {{- /* Auto TOC */ -}}
-    {{- if ne $toc.enable false -}}
-        <div class="toc" id="toc-auto">
-            <h2 class="toc-title">{{ T "contents" }}</h2>
-            <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
-        </div>
-    {{- end -}}
-
-    <article class="page single">
-        <br>
+    <div class="toc" id="toc-auto">
         {{ with .Params.featured_image }}
             {{ with $.Resources.Get . }}
-                {{ $resized := .Resize "600x" }}
-                <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image">
+                {{ $resized := .Resize "270x" }}
+                <img 
+                    src="{{ $resized.RelPermalink }}" 
+                    alt="Resized Featured Image" 
+                    align="left" 
+                    class="featured-image-preview"
+                    style="height: auto; margin: 10px 20px 20px 20px; float: left; border-style: solid;">
             {{ end }}
         {{ end }}
+    {{- if ne $toc.enable false -}}
+        <h2 class="toc-title">{{ T "contents" }}</h2>
+        <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
+    {{- end -}}
+    </div>
 
+    <article class="page single">
         {{- /* Title */ -}}
         <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
 
@@ -71,17 +74,6 @@
             </div>
         </div>
 
-        {{- /* Featured image */ -}}
-        {{- $image := $params.featuredimage -}}
-        {{- with .Resources.GetMatch "featured-image" -}}
-            {{- $image = .RelPermalink -}}
-        {{- end -}}
-        {{- with $image -}}
-            <div class="featured-image">
-                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/img.html" -}}
-            </div>
-        {{- end -}}
-
         {{- /* Static TOC */ -}}
         {{- if ne $toc.enable false -}}
             <div class="details toc" id="toc-static"  data-kept="{{ if $toc.keepStatic }}true{{ end }}">
@@ -94,6 +86,7 @@
                 </div>
             </div>
         {{- end -}}
+
 
         {{- /* Content */ -}}
         <div class="content" id="content">
