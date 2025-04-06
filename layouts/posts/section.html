@@ -29,6 +29,7 @@
                             ({{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }})
                         </span>
                     </article>
+                    <br class="archive-item-separator" />
                 {{- end -}}
             {{- end -}}
             {{- partial "paginator.html" . -}}
