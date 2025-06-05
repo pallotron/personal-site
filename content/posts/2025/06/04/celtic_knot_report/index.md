@@ -4,6 +4,7 @@ draft: false
 title: "Celtic Knot 1000 Ride Report"
 tags: ["cycling", "audax"]
 featured_image: "route.jpg"
+images: ["route.jpg"]
 ---
 
 This is a report of my successful Celtic Knot brevet.
