@@ -197,10 +197,18 @@ From now on, the most epic portion of the entire Celtic Knot started for me. We 
 The rain was hard at times and didn't stop, and the wind was strong too. The area wasn't particularly hilly but remote, with plenty of boreens and potholes, and some N roads where cars were passing pretty fast, throwing water at us. At that point, I was soaked to the bone but warm. I felt like a drowned rat, but a warm drowned rat.
 
 We were crossing some house conglomerates that resembled small villages; you would expect them to have at least a garage or convenience shop, but there was nothing, and even if there was, it was past 8 pm. We basically had food last at 4 pm, and I only had one bottle of water and half a granola bar. I was starting to hallucinate sausage rolls.
+At some point a car stopped, a woman inside, looking utterly bewildered, asked if we're in trouble and need help. I guess the sight of three lunatics cycling in that weather was a bit much for her.
 
 I was cold and wet but manageable. I knew that as long as I kept moving, I would be okay; stopping was not an option, as you would start shaking uncontrollably.
 
 We got to the Atherny control at 11pm.
+
+As we pull under the rooftop of a garage to make a proof of passage selfie, Cian realises his front tire is flat. This is the luck of the Irish!!! At least we can fix it under a roof and not in the pitch dark of a boreen under heavy rain... Thank you, cycling gods! It was at that moment that I notice with a corner of my eyes a pub, and I propose to get in and warm up a bit. We get in the pub while all the locals are drinking and singing. Cian talks to the bar tender and he fixes us some hot tea and Tayto (very Irish).
+
+I think we spent 40m there, Cian fixed his tire in comfort. Best puncture repair stop ever.
+
+The last part of the event was still in the rain until 1am, and finished at 2:30am.
+The climbs were tough and I was cursing Hendrik :DDD. Sorry, Hendrik!
 
 As we pull under the rooftop of a garage to make a proof of passage selfie, Cian realises his front tire is flat.
 This is the luck of the Irish!!! As we can at least fix it under a roof and not in the pitch dark of a boreen under heavy rain... Thank you, cycling gods!
