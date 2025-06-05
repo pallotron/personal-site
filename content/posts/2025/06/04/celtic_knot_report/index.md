@@ -54,13 +54,13 @@ It was a nice descent down to the ocean, riding through [the Burren](https://en.
 
 {{< video src=videos/burren_riding width="50%" controls="yes" >}}
 
-That is when the first drama of the event started. Cian's left Look pedal came off the axle spindle... We stopped; it was not possible to fix this type of thing on the road. There was nothing the rest of the group could do, so we decided to press on. Cian would call the organiser to see if they had any spares. Later on, I learned he continued riding, putting his cleat on the bare axle for 50+ km, until Tim Ling came to the rescue with a Look pedal! Cian would end up joining me and Gerard the last day and finished the ride! Talk about commitment!
+That is when the first drama of the event started. Cian's left Look pedal came off the axle spindle... We stopped; it was not possible to fix this type of thing on the road. There was nothing the rest of the group could do, so we decided to press on. Cian would call the organiser to see if they had any spares. Later on, I learned he continued riding, putting his cleat on the bare axle for 50+ km, until Tim Ling came to the rescue with a Look pedal! Cian would end up joining me and Gerald the last day and finished the ride! Talk about commitment!
 
 The rain started soon after we left Cian. I put on my Goretex Shakedry jacket and gloves but didn't put on the rain legs and shoe covers (first mistake of the ride!). My inner monologue was screaming at me, "You fool!".
 
 The wind was south westerly, just in our face. We battled this head wind for ~150km all the way to Loop Head.
 
-I made it to the "Tea Party control" with Gerard in Fanore completely soaked. Gerard was my companion for the entire ride :) Misery loves company, I guess!
+I made it to the "Tea Party control" with Gerald in Fanore completely soaked. Gerald was my companion for the entire ride :) Misery loves company, I guess!
 
 {{< image path=images/tea_party.jpeg width=700 >}}
 
@@ -99,7 +99,7 @@ Only ~25km left to the Mountflag control and sleep... except that it was a gruel
 
 {{< image path=images/mountshannon.jpg width=700 >}}
 
-I clearly remember shouting "Fucking hell!!!!!! 43 minutes for 2 kilometers!!!!!!!" and made Gerard laugh :D. At least someone was enjoying my suffering.
+I clearly remember shouting "Fucking hell!!!!!! 43 minutes for 2 kilometers!!!!!!!" and made Gerald laugh :D. At least someone was enjoying my suffering.
 
 I was worried about punctures in the middle of the night, with rain. The descent was sketchy, and a few times I dangerously veered towards the bushes on the side of the road because I was yawing and falling asleep. Normally I wouldn't be worried about such a road on my Grizl with 45mm tyres... but I was on road bike and 30mm... I felt every single bump.
 
@@ -161,7 +161,7 @@ The last day is a flatter loop to Mullingar and back via Athlone and Moate, taki
 
 We started around 7 am (you can see a theme here: every day we started 30 minutes later than the previous day!).
 
-Cian joined Gerard and me for the entire day, and Keith (one of the organisers) rode with us to his home in Portumna.
+Cian joined Gerald and me for the entire day, and Keith (one of the organisers) rode with us to his home in Portumna.
 
 Leaving the control, there was a super steep and long climb up the mountains, but it went quickly because it was a beautiful sunny day, and we were chatting. I was getting to know Cian better.
 
@@ -178,7 +178,7 @@ Then, we continued onto the Grand Canal towpaths and greenways.
 
 Cian had a puncture there. This is where my brand new [Silca Impero Ultimate Frame Pump](https://silca.cc/en-eu/collections/frame-pumps-mini-pumps/products/impero-ultimate-frame-pump) got its first usage! And it wasn't even me! I felt strangely proud of my pump. We arrived in Mullingar around 4 pm and had some food at an Asian restaurant (I had an amazing Chicken Cha Han).
 
-From Mullingar, we took the greenway to Athlone, a 43km stretch of old railway converted to a cycleway. On a nice day, it might be pleasant, but it was like a wind tunnel and pretty boring. Damn straight, very few bends, and not much to see besides trees. I wasn't very fond of it, probably because I knew the bad weather was coming. Gerard had a puncture on the greenway. I was worried about sharp objects or thorns due to the winds throwing all sorts of stuff onto the track, but it turned out to be a rusty nail. The greenway was clearly trying to cause mechanicals :D
+From Mullingar, we took the greenway to Athlone, a 43km stretch of old railway converted to a cycleway. On a nice day, it might be pleasant, but it was like a wind tunnel and pretty boring. Damn straight, very few bends, and not much to see besides trees. I wasn't very fond of it, probably because I knew the bad weather was coming. Gerald had a puncture on the greenway. I was worried about sharp objects or thorns due to the winds throwing all sorts of stuff onto the track, but it turned out to be a rusty nail. The greenway was clearly trying to cause mechanicals :D
 
 After fixing the puncture, I suggested we put on rain gear. I put on, in order:
 
@@ -242,7 +242,7 @@ The Flagmount base position is epic, but makes it for very hard last 30km... hav
 
 ## Thanks
 
-Thanks to organiser and volunteers without which this type of events wouldn't be possible. Thanks for Gerard and later Cian for the company.
+Thanks to organiser and volunteers without which this type of events wouldn't be possible. Thanks for Gerald and later Cian for the company.
 
 ## More info
 
