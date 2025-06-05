@@ -1,0 +1,19 @@
+{{- with .Get "path" }}
+    {{- with $r := $.Page.Resources.Get ($.Get "path") }}
+        {{- with $.Get "width" }}
+            {{- with $r.Process (printf "resize %dx webp" ($.Get "width" )) }}
+                {{- $alt := or ($.Get "alt") "" -}}
+                <div>
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}">
+                    <p style="font-size: medium;">{{ $alt }}</p>
+                </div>
+            {{- end }}
+        {{- else }}
+            {{- errorf "The %q shortcode requires a 'width' argument: see %s" $.Name $.Position }}
+        {{- end }}
+    {{- else }}
+        {{- warnf "The %q shortcode was unable to find %s: see %s" $.Name ($.Get "path") $.Position }}
+    {{- end }}
+{{- else }}
+    {{- errorf "The %q shortcode requires a 'path' argument: see %s" .Name .Position }}
+{{- end -}}

@@ -14,7 +14,7 @@
     <div class="toc" id="toc-auto">
         {{ with .Params.featured_image }}
             {{ with $.Resources.Get . }}
-                {{ $resized := .Resize "270x" }}
+                {{ $resized := .Resize "200x" }}
                 <img 
                     src="{{ $resized.RelPermalink }}" 
                     alt="Resized Featured Image" 
