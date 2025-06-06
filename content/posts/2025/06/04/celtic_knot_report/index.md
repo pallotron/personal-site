@@ -210,16 +210,6 @@ I think we spent 40m there, Cian fixed his tire in comfort. Best puncture repair
 The last part of the event was still in the rain until 1am, and finished at 2:30am.
 The climbs were tough and I was cursing Hendrik :DDD. Sorry, Hendrik!
 
-As we pull under the rooftop of a garage to make a proof of passage selfie, Cian realises his front tire is flat.
-This is the luck of the Irish!!! As we can at least fix it under a roof and not in the pitch dark of a boreen under heavy rain... Thank you, cycling gods!
-It is at that moment that I notice with a corner of my eyes a pub, and I propose to get in and warm up a bit.
-We get in the pub while all the locals are drinking and singing. Cian talks to the bar tender and he fixes us some hot tea and Tayto (very Irish). I felt like I had stumbled into a movie scene.
-
-I think we spent 40m there, Cian fixed his tire in comfort. Best puncture repair stop ever.
-
-The last part of the event was still in the rain until 1am, and finished at 2:30am.
-The climbs were tough and I was cursing Hendrik :DDD. Sorry, Hendrik!
-
 {{< gallery match="images/3rd_day/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## What went well
