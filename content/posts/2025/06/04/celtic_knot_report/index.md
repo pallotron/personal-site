@@ -135,7 +135,7 @@ On the 2nd day there was a control photo of a "Gatehouse", we were relying on th
 
 On audax riders organisers can be sometimes picky :PPP. They enjoy our suffering, I'm convinced.
 
-{{< image path=images/2nd_day/picky_organisers.jpg width=700 >}}
+{{< image path=images/picky_organisers.jpg width=700 >}}
 
 I had a lamb kebab at a chipper in Kilfinane, a small market town, apparently the highest town in County Limerick.
 
