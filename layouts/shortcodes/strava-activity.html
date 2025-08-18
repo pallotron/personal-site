@@ -1,0 +1,5 @@
+{{ if (.Get "id") }}
+<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="{{ .Get "id" }}" data-style="standard"
+    data-from-embed="false"></div>
+<script src="https://strava-embeds.com/embed.js"></script>
+{{ end }}

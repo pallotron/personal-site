@@ -37,6 +37,8 @@ Upon arriving in Writtle around 6 PM, I set about pitching our tents. This task 
 
 The location of the long-term parking for cars was a bit annoying: a 3.2km walk ([strava link](https://www.strava.com/activities/15310899419) for proof :P). In retrospect, I believe there was enough space for me to park the car adjacent to the camping ground...
 
+{{< strava-activity id="15310899419" >}}
+
 Spending the two days prior to the start proved to be a wise decision. It allowed me to ease the pre-event anxiety, mingle with fellow audaxers, and simply relax. I had ample time to get registered, collect my starter pack, and meticulously prepare my bike for the journey ahead.
 
 {{< gallery match="images/02_days_prior_start/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
@@ -120,6 +122,8 @@ I chose Richmond and Dalkeith, with the idea of splitting the route into roughly
 I could never test this strategy, though, due to the DNF.
 
 ## The ride, the DNF and having to abandon
+
+{{< strava-activity id="15337687697" >}}
 
 My start time was 10:30 AM, with waves of 45 riders departing every 15 minutes. Compared to my 5:30 PM start at PBP23, this felt like a luxurious lie-in. Waking at a sensible hour, enjoying breakfast, and even cheering on the earlier starters? Pure bliss.
 
