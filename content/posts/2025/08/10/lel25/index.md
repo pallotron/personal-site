@@ -1,6 +1,6 @@
 ---
 date: "2025-08-10T08:08:35+01:00"
-draft: false
+draft: true
 title: "DNF'ing LEL25 and Lessons Learned"
 tags: ["cycling", "audax"]
 featured_image: "lel.png"
