@@ -1,5 +1,5 @@
 +++
-date = '2025-10-01T00:00:00Z'
+date = '2025-09-03T00:00:00Z'
 draft = false
 title = '👋 About me'
 +++
