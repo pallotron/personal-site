@@ -7,3 +7,10 @@
     vertical-align: top;
     /* Important for inline-block to align tops */ 
 }
+
+.special {
+    .single-title,
+    .single-subtitle {
+        text-align: left;
+    }
+}
