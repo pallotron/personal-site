@@ -1,5 +1,7 @@
 ---
 title: "DHCPLB"
+date: "2025-09-02T08:04:26+01:00"
+draft: false
 ---
 
 {{< image path=dhcplb/datahall.webp width=600 >}}

@@ -1,5 +1,7 @@
 ---
 title: "FBTFTP"
+date: "2025-09-02T08:04:26+01:00"
+draft: false
 ---
 
 Dynamic TFTP server written in Python3 that was used in Meta/Facebook datacenters (now replaced).
