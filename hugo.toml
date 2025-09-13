@@ -102,6 +102,11 @@ license = ""
 [services.disqus]
 shortname = 'pallotron'
 
+[params.analytics]
+# Google Analytics
+[params.analytics.google]
+id = "G-MDTSVL2180"
+
 [params.page]
 author = "pallotron"
 
