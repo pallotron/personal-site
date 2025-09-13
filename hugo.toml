@@ -105,7 +105,7 @@ shortname = 'pallotron'
 [params.analytics]
 # Google Analytics
 [params.analytics.google]
-id = "G-MDTSVL2180"
+id = "G-Q3TN4Z8MMZ"
 
 [params.page]
 author = "pallotron"
