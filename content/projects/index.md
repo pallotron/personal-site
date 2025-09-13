@@ -52,7 +52,7 @@ Since the beginning Facebook DHCP infra was based on the standard ISC `dhcpd`
 
 - [Meta engineering blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/)
 
-### fbtftp ([Github repo](https://github.com/facebookarchive/fbtftp)
+### fbtftp ([Github repo](https://github.com/facebookarchive/fbtftp))
 
 Dynamic TFTP server written in Python3 that was used in Meta/Facebook datacenters (now replaced).
 Allow you to configure hooks and serve files dynamically based on code you write.
