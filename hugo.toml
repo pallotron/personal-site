@@ -47,10 +47,10 @@ mobileMode = "auto"
 # URL of the LOGO
 logo = ""
 # title name
-name = "angelofailla.com"
+name = "Angelo \"pallotron\" Failla's personal site"
 description = "Personal site of Angelo Failla, aka pallotron"
 # you can add extra information before the name (HTML format is supported), such as icons
-pre = ""
+pre = "<img src='/favicon.svg' width='24' height='24' />"
 # you can add extra information after the name (HTML format is supported), such as icons
 post = ""
 # whether to use typeit animation for title name
