@@ -4,8 +4,6 @@ date: "2025-09-02T08:04:26+01:00"
 draft: false
 ---
 
-{{< image path=dhcplb/datahall.webp width=600 >}}
-
 `dhcplb` is Meta's implementation of:
 
 - a DHCP v4/v6 relayer with load balancing capabilities
