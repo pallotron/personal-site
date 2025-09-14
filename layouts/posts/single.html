@@ -12,19 +12,13 @@
 
     {{- /* Auto TOC */ -}}
     <div class="toc" id="toc-auto">
-        {{ with .Params.featured_image }}
-            {{ with $.Resources.Get . }}
-                {{ $resized := .Resize "200x" }}
-                <img 
-                    src="{{ $resized.RelPermalink }}" 
-                    alt="Resized Featured Image" 
-                    class="featured-image-preview"
-                    style="height: auto; margin: 10px 20px 20px 20px; border-style: solid;">
-            {{ end }}
-        {{ end }}
-    {{- if ne $toc.enable false -}}
-        <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
-    {{- end -}}
+        {{- $hasHeaders := ne (string .TableOfContents) "<nav id=\"TableOfContents\"></nav>" -}}
+        {{- if and (ne $toc.enable false) $hasHeaders -}}
+            <h2 class="toc-title">
+                {{ T "contents" }}
+            </h2>
+            <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
+        {{- end -}}
     </div>
 
     <article class="page single">
@@ -38,6 +32,16 @@
 
         {{- /* Meta */ -}}
         <div class="post-meta">
+            {{ with .Params.featured_image }}
+                {{ with $.Resources.Get . }}
+                    {{ $resized := .Resize "300x" }}
+                    <img 
+                        src="{{ $resized.RelPermalink }}" 
+                        alt="Resized Featured Image" 
+                        class="featured-image-preview"
+                        style="height: auto; margin: 10px 20px 20px 20px; border-style: solid;">
+                {{ end }}
+            {{ end }}
             <div class="post-meta-line">
                 {{- $author := $params.author | default .Site.Params.Author.name | default (T "author") -}}
                 {{- $authorLink := $params.authorlink | default .Site.Params.Author.link | default .Site.Home.RelPermalink -}}

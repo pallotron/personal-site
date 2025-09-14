@@ -2,6 +2,8 @@
 date = '2025-09-03T00:00:00Z'
 draft = false
 title = '👋 About me'
+featured_image = "AngeloLEL.jpeg"
+images = ["AngeloLEL.jpeg"]
 +++
 
 Hello visitor,  

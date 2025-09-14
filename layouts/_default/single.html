@@ -11,14 +11,27 @@
     {{- end -}}
 
     {{- /* Auto TOC */ -}}
-    {{- if ne $toc.enable false -}}
-        <div class="toc" id="toc-auto">
-            <h2 class="toc-title">{{ T "contents" }}</h2>
-            <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
-        </div>
-    {{- end -}}
+    <div class="toc" id="toc-auto">
+        {{ with .Params.featured_image }}
+            {{ with $.Resources.Get . }}
+                {{ $resized := .Resize "200x" }}
+                <img 
+                    src="{{ $resized.RelPermalink }}" 
+                    alt="Resized Featured Image" 
+                    class="featured-image-preview"
+                    style="height: auto; margin: 10px 20px 20px 20px; border-style: solid;">
+            {{ end }}
+        {{ end }}
+        <h2 class="toc-title">
+        {{- $hasHeaders := ne (string .TableOfContents) "<nav id=\"TableOfContents\"></nav>" -}}
+        {{- if and (ne $toc.enable false) $hasHeaders -}}
+                {{ T "contents" }}
+        {{- end -}}
+        </h2>
+        <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto"></div>
+    </div>
 
-    <div class="page single special">
+    <article class="page single">
         {{- /* Title */ -}}
         <h1 class="single-title animate__animated animate__pulse animate__faster">
             {{- .Title -}}
@@ -49,5 +62,5 @@
 
         {{- /* Comment */ -}}
         {{- partial "comment.html" . -}}
-    </div>
+    </article>
 {{- end -}}
