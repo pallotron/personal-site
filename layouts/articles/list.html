@@ -1,0 +1,17 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    <div class="page archive">
+        <h2 class="single-title animate__animated animate__pulse animate__faster">{{ .Title }}</h2>
+        {{- if .Content -}}
+            <div class="summary">{{ .Content }}</div>
+        {{- end -}}
+        {{- range .Pages.ByDate.Reverse -}}
+            <article class="archive-item">
+                <a href="{{ .RelPermalink }}" class="archive-item-link">
+                    {{- .Title | emojify -}}
+                </a>
+            </article>
+        {{- end -}}
+    </div>
+{{- end -}}

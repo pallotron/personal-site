@@ -185,6 +185,13 @@ url = "/projects/"
 title = ""
 [[menu.main]]
 weight = 4
+identifier = "articles"
+pre = ""
+post = ""
+name ="📝 Articles"
+url = "/articles/"
+[[menu.main]]
+weight = 4
 identifier = "posts"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = "🗓️"
