@@ -262,7 +262,7 @@ iconColor = "#5bbad5"
 tileColor = "#da532c"
 
 [outputs]
-home = ['html', 'rss']
+home = ['html', 'rss', 'json']
 section = ['html', 'rss']
 taxonomy = ['html']
 term = ['html']
