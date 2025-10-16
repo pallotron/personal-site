@@ -2,7 +2,7 @@
 date = '2025-03-20T17:45:16Z'
 draft = false
 title = 'Playing with hugo'
-tags = ['tech']
+tags = ["hugo", "gohugo", "wordpress", "static-site-generator", "cloudflare", "ci-cd", "github", "tech"]
 featured_image = 'hugo.png'
 +++
 

@@ -2,7 +2,7 @@
 date: "2025-08-10T08:08:35+01:00"
 draft: false
 title: "DNF'ing LEL25 and Lessons Learned"
-tags: ["cycling", "audax"]
+tags: ["cycling", "audax", "randonneuring", "ultra-cycling", "endurance-cycling", "ride-report", "lel25", "london-edinburgh-london", "dnf", "mason-cycles", "bike-packing"]
 featured_image: "lel.png"
 images: ["lel.png"]
 ---

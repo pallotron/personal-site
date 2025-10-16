@@ -2,7 +2,7 @@
 date: "2025-09-02T08:04:26+01:00"
 draft: false
 title: "End of fun-employment"
-tags: ["work", "tech"]
+tags: ["career", "work", "tech", "crusoe", "new-job", "personal"]
 featured_image: "crusoe.jpeg"
 images: ["crusoe.jpeg"]
 ---
