@@ -2,7 +2,7 @@
 date: "2025-04-01T16:07:33+01:00"
 draft: false
 title: "Badge Post"
-tags: ["work", "meta", "facebook", "resignation"]
+tags: ["career", "work", "meta", "facebook", "resignation", "sabbatical", "personal"]
 featured_image: "badge.jpg"
 ---
 
