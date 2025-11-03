@@ -14,7 +14,7 @@ This project was born out of a combination of necessity and curiosity. After [a 
 
 The end of the year is approaching and I found myself wanting to get a better handle on my expenses. With my typing ability temporarily reduced, I needed a project that I could work on in short bursts, something that didn't require constant, strenuous typing. This seemed like the perfect opportunity to give "vibe coding" a try to see what all the fuss was about.
 
-So, I decided to put my newfound optimism to the test. I set myself a challenge: to build a Textual user interface for a personal project of mine, an [expenses analyzer](https://github.com/pallotron/expenses-analyzer), with zero prior knowledge of the [Textual](https://github.com/Textualize/textual) framework. I wanted to see if I could "vibe" my way through the development process, relying on AI to guide me and help me learn the ropes.
+So, I decided to put my newfound optimism to the test. I set myself a challenge: to build a Textual user interface for a personal project of mine, an [expenses analyzer](https://github.com/pallotron/expenses_analyzer), with zero prior knowledge of the [Textual](https://github.com/Textualize/textual) framework. I wanted to see if I could "vibe" my way through the development process, relying on AI to guide me and help me learn the ropes.
 
 I'm happy to report that the experiment was a resounding success. I was able to build a functional and visually appealing Textual UI in just a few hours, and I was blown away by how much I was able to achieve with the help of AI.
 
@@ -60,7 +60,7 @@ Here are some screenshots of the final application:
 
 ## Under the Hood: Data Processing and AI Categorization
 
-To handle the financial data efficiently, [Expense Analyzer](https://github.com/pallotron/expenses-analyzer) leverages powerful Python libraries. When you import a CSV file, the data is first loaded into a **[Pandas DataFrame](https://pandas.pydata.org/)**. This allows for robust data manipulation, cleaning, and standardization of column names and data types.
+To handle the financial data efficiently, [Expense Analyzer](https://github.com/pallotron/expenses_analyzer) leverages powerful Python libraries. When you import a CSV file, the data is first loaded into a **[Pandas DataFrame](https://pandas.pydata.org/)**. This allows for robust data manipulation, cleaning, and standardization of column names and data types.
 
 Once processed, your transaction data is stored in the **[Parquet](https://parquet.apache.org/)** format. Parquet is a columnar storage file format known for its efficiency in analytics, offering excellent compression and query performance. This ensures that even as your transaction history grows, the application remains fast and responsive.
 
@@ -78,4 +78,4 @@ I believe that AI has the potential to revolutionize the way we build software. 
 
 I'm excited to see what the future holds for AI-powered software development. And I'm looking forward to continuing to explore the possibilities of this amazing technology.
 
-If you're curious to try out the Expenses Analyzer, head over to the [GitHub repository](https://github.com/pallotron/expenses-analyzer) and give it a spin! I'd love to hear your thoughts and feedback on how it helps you manage your expenses.
+If you're curious to try out the Expenses Analyzer, head over to the [GitHub repository](https://github.com/pallotron/expenses_analyzer) and give it a spin! I'd love to hear your thoughts and feedback on how it helps you manage your expenses.
