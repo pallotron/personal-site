@@ -47,11 +47,11 @@ I started with the basics, like setting up the main application window and addin
 
 I was impressed by the AI's ability to understand my requests and generate code that was both correct-ish and idiomatic. I was also impressed by its ability to learn from my feedback. For example, when I asked it to create a file browser, it initially generated a simple list of files. But when I asked it to make it more user-friendly, it added features like sorting and filtering.
 
-![The initial import screen](screenshots/Import-001-Start.svg)
+![The initial import screen](screenshots/import-001-start.jpg)
 
-![The file browser](screenshots/Import-002-Browse.svg)
+![The file browser](screenshots/import-002-browse.jpg)
 
-![The CSV preview](screenshots/Import-003-CSV_File_Preview.svg)
+![The CSV preview](screenshots/import-003-csv-preview.jpg)
 
 ## Challenges and Learning Moments
 
@@ -69,11 +69,12 @@ In the end, I was able to build a fully functional Textual UI for my expenses an
 
 Here are some screenshots of the final application:
 
-![The transactions screen](screenshots/Transactions.svg)
+![The transactions screen](screenshots/transactions.png)
 
-![The merchant categorization screen](screenshots/CategorizeMerchants.svg)
+![The merchant categorization screen](screenshots/categorize-merchants.jpg)
 
-![The summary screen](screenshots/Summary.svg)
+![The summary screen](screenshots/summary.png)
+![The monthly summary screen](screenshots/summary-monthly.png)
 
 ## Under the Hood: Data Processing and AI Categorization
 
