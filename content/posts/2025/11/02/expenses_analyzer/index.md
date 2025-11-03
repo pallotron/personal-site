@@ -1,7 +1,24 @@
 ---
-title: "Expense Analyzer:<br>Building a Textual UI with Zero Experience Using AI Assistance"
+title: "Building a Textual UI with Zero Experience Using AI Assistance"
 date: 2025-11-02
-tags: ["AI", "Python", "Textual", "Software Development", "Personal Project", "Expense Management", "Financial Tools", "CLI", "Pandas", "Parquet", "Google Gemini", "Data Analysis", "User Interface", "Learning", "Productivity"]
+tags:
+  [
+    "AI",
+    "Python",
+    "Textual",
+    "Software Development",
+    "Personal Project",
+    "Expense Management",
+    "Financial Tools",
+    "CLI",
+    "Pandas",
+    "Parquet",
+    "Google Gemini",
+    "Data Analysis",
+    "User Interface",
+    "Learning",
+    "Productivity",
+  ]
 featured_image: "logo.jpg"
 images: ["logo.jpg"]
 ---

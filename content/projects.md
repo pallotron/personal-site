@@ -7,6 +7,8 @@ A list of my public work and personal projects. Click on each project to learn m
 ## Personal Projects
 
 - [Yubiswitch](/projects/yubiswitch/): A macOS status bar application to prevent accidental Yubikey OTP triggers by enabling/disabling the device with a hotkey.
+- [Expenses Analyzer](/projects/expenses_analyzer/): A Textual TUI application for analyzing your personal expenses.
+- [PVMLab](/projects/pvmlab/): A command-line tool to automate the setup of a simple virtual provisioning lab on macOS using QEMU, socket_vmnet, cloud-init, and Docker.
 
 ## Work Related Projects (Meta)
 
