@@ -23,3 +23,14 @@
         text-align: left;
     }
 }
+
+// Override summary border-bottom
+.home[data-home=posts] {
+  .summary {
+    border-bottom: 1px dashed $single-link-color;
+
+    [theme=dark] & {
+      border-bottom: 1px dashed $single-link-color-dark;
+    }
+  }
+}
