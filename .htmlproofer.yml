@@ -1,0 +1,10 @@
+check_html: true
+check_links: true
+check_images: true
+extension: .html
+http_status_ignore:
+  - 403
+  - 429
+  - 999
+ignore_urls:
+  - "localhost:1313"
