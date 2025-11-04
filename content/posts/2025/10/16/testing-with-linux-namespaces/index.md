@@ -39,18 +39,18 @@ like your laptop or your CI/CD pipeline virtual runners.
 Before diving into the lab I built to test my recent `dhcplb` changes, let's quickly
 recap the tools at our disposal:
 
-*   **Network Namespaces (`ip netns`)**: A network namespace is a logical copy
+* **Network Namespaces (`ip netns`)**: A network namespace is a logical copy
     of the network stack, complete with its own interfaces, routing tables, and
     firewall rules. Processes running in one namespace are isolated from
     others. It's like having a separate, virtual machine for networking, but
     with minimal overhead.
-*   **Virtual Ethernet Pairs (`veth`)** ([man page](https://man7.org/linux/man-pages/man4/veth.4.html)): 
+* **Virtual Ethernet Pairs (`veth`)** ([man page](https://man7.org/linux/man-pages/man4/veth.4.html)):
     A `veth` pair is a simple concept:
     it's a link with two ends. A particularly
     interesting use case is to place one end of a veth pair in one
     network namespace and the other end in another network namespace,
     thus allowing communication between network namespaces.
-*   **Network Bridges (`brctl` or `ip link`)**: A bridge is a virtual switch.
+* **Network Bridges (`brctl` or `ip link`)**: A bridge is a virtual switch.
     They are necessary when you are working 3 or more network namespaces.
     A bridge can connect multiple network interfaces (like one end of a `veth` pair)
     together, allowing them to communicate as if they were on a switch on the same physical
@@ -69,10 +69,10 @@ networks created by the lab scripts.
 This is the standard 4-actor topology that simulates `dhcplb` operating as a
 load balancer, actors are:
 
-*   a dhcp `client` in the `ns-client` namespace
-*   a dhcp `relay` in the `ns-relay` namespace
-*   a dhcplb instance acting as load balancer in the `ns-dhcplb` namespace
-*   and finally a dhcp `server` in the `ns-server` namespace
+* a dhcp `client` in the `ns-client` namespace
+* a dhcp `relay` in the `ns-relay` namespace
+* a dhcplb instance acting as load balancer in the `ns-dhcplb` namespace
+* and finally a dhcp `server` in the `ns-server` namespace
 
 ```mermaid
 graph TD
@@ -153,7 +153,7 @@ graph LR
 
 ### Server/Broadcast Lab Topology
 
-This 3-actor topology places `dhcplb` acting as a standard DHCP server, 
+This 3-actor topology places `dhcplb` acting as a standard DHCP server,
 as the first-hop relay for the client,
 testing its ability to handle broadcast/multicast packets directly.
 
@@ -187,9 +187,9 @@ lightweight Ubuntu VM. The `Makefile` seamlessly manages this VM, starting it
 when needed and executing all the test commands inside it. This approach
 provides the best of both worlds:
 
-*   **Developers on macOS** can run the full, Linux-based integration test
+* **Developers on macOS** can run the full, Linux-based integration test
     suite with a single `make` command.
-*   **CI/CD pipelines** (like GitHub Actions) can run the same test scripts
+* **CI/CD pipelines** (like GitHub Actions) can run the same test scripts
     directly on a Linux runner, without the overhead of a VM.
 
 ## Under the Hood: A Look at the `dhcplb` Test Lab Code
@@ -204,7 +204,7 @@ real-world example of these concepts in action. Let's walk through how the
 **The Goal:** Create the following network:
 `[ ns-client ] <-> [ br-int ] <-> [ ns-relay ] <-> [ br-ext ] <-> [ ns-dhcplb ] <-> [ ns-server ]`
 
-**Step 1: Create the Namespaces**
+#### Step 1: Create the Namespaces
 
 First, each actor in our simulation gets its own isolated network stack.
 
@@ -216,7 +216,7 @@ ip netns add "ns-dhcplb"
 ip netns add "ns-server"
 ```
 
-**Step 2: Create the Virtual Switches (Bridges)**
+#### Step 2: Create the Virtual Switches (Bridges)
 
 Next, two bridges are created to act as our internal and external networks.
 
@@ -228,7 +228,7 @@ ip link add name "br-ext" type bridge
 ip link set "br-ext" up
 ```
 
-**Step 3: Connect the Client to the Internal Bridge**
+#### Step 3: Connect the Client to the Internal Bridge
 
 To connect the `ns-client` namespace to the `br-int` bridge, a `veth` pair is
 created. One end (`v-cli`) is moved into the namespace, and the other end
@@ -248,10 +248,11 @@ ip link set "v-br-cli" master "br-int"
 ip link set "v-br-cli" up
 ip netns exec "ns-client" ip link set dev "v-cli" up
 ```
+
 This process is repeated for every connection in the topology diagram,
 methodically building the virtual network, piece by piece.
 
-**Step 4: Assigning IP Addresses**
+#### Step 4: Assigning IP Addresses
 
 Once the interfaces are in place, they are assigned IP addresses within their
 respective namespaces. For example, the `ns-relay` namespace gets IPs on both
@@ -267,11 +268,12 @@ ip netns exec "ns-relay" ip addr add "192.168.100.1/24" dev "v-rly-int"
 ip netns exec "ns-relay" ip addr add "192.168.200.1/24" dev "v-rly-ext"
 ```
 
-**Step 5: Running the Services and the Test**
+#### Step 5: Running the Services and the Test
 
 With the topology built, the `Makefile` can now orchestrate the test. It uses
 `ip netns exec` to run each service within its designated namespace,
 redirecting their output to log files.
+
 ### Testing the Server/Broadcast Topology
 
 The `server` mode topology is simpler. It tests `dhcplb`'s ability to act as a standalone DHCP server, directly responding to broadcast (DHCPv4) and multicast (DHCPv6) discovery packets from clients on the same network segment.
@@ -279,7 +281,7 @@ The `server` mode topology is simpler. It tests `dhcplb`'s ability to act as a s
 **The Goal:** Create the following network:
 `[ ns-client ] <-> [ br-int ] <-> [ ns-dhcplb ]`
 
-**Step 1: Create Namespaces and the Bridge**
+#### Step 1: Create Namespaces and the Bridge
 
 Only two namespaces are needed: one for the client and one for `dhcplb`. A single bridge connects them.
 
@@ -292,7 +294,7 @@ ip link add name "br-int" type bridge
 ip link set "br-int" up
 ```
 
-**Step 2: Connect the Actors to the Bridge**
+#### Step 2: Connect the Actors to the Bridge
 
 Both the client and `dhcplb` are connected to the `br-int` bridge using `veth` pairs.
 
@@ -324,7 +326,7 @@ ip netns exec "ns-dhcplb" ip addr add "192.168.100.1/24" dev "v-lb"
 ip netns exec "ns-dhcplb" ip -6 addr add "fd00:100::1/64" dev "v-lb"
 ```
 
-**Step 4: Running the Services and the Test**
+#### Step 4: Running the Services and the Test
 
 With the topology built, the `Makefile` can now orchestrate the test. It uses
 `ip netns exec` to run each service within its designated namespace,
@@ -441,12 +443,12 @@ which is then relayed to `dhcplb`.
 ```makefile
 # From tests/Makefile
 test-relay-v4: delete-lease
-	@echo "▶️  Running DHCPv4 RELAY client test..."
-	@limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -v -1 v-cli
+ @echo "▶️  Running DHCPv4 RELAY client test..."
+ @limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -v -1 v-cli
 
 test-relay-v6: delete-lease
-	@echo "▶️  Running DHCPv4 RELAY client test..."
-	@limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -6 -v -1 v-cli
+ @echo "▶️  Running DHCPv4 RELAY client test..."
+ @limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -6 -v -1 v-cli
 ```
 
 The test passes if `dhclient` successfully obtains a lease, proving that the
@@ -528,7 +530,6 @@ listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144
 22:23:00 v-br-cli Out IP6 fe80::9c54:f8ff:fe97:d75.dhcpv6-server > fe80::66:b4ff:fe13:542c.dhcpv6-client: dhcp6 reply
 ```
 
-
 **Server Mode Test**
 This command runs the client in the same way, but this time `dhcplb` responds
 to the broadcast/multicast directly.
@@ -536,16 +537,16 @@ to the broadcast/multicast directly.
 ```makefile
 # From tests/Makefile
 test-server-v4: delete-lease
-	@echo "▶️  Running DHCPv4 SERVER client test..."
-	@limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -v -1 v-cli
+ @echo "▶️  Running DHCPv4 SERVER client test..."
+ @limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -v -1 v-cli
 
 test-relay-v6: delete-lease
-	@echo "▶️  Running DHCPv4 RELAY client test..."
-	@limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -6 -v -1 v-cli
+ @echo "▶️  Running DHCPv4 RELAY client test..."
+ @limactl shell $(LIMA_INSTANCE_NAME) sudo ip netns exec ns-client dhclient -6 -v -1 v-cli
 ```
+
 The test passes if `dhclient` successfully obtains a lease from `dhcplb` acting
 as a server.
-
 
 ## Automation with a Simple `Makefile`
 
@@ -553,7 +554,7 @@ The beauty of this setup is its scriptability. The entire lifecycle of the
 lab—creation, setup, test execution, and teardown—is managed by a simple
 `Makefile`.
 
-- `make setup-relay`: Builds the relay topology.
+* `make setup-relay`: Builds the relay topology.
 
 ```bash
 ❯ make setup-relay
@@ -568,6 +569,7 @@ lab—creation, setup, test execution, and teardown—is managed by a simple
 🚀 Starting services...
 ✅ Relay test lab is running.
 ```
+
 ```bash
 ❯ make setup-server
 ✅ Lima VM instance 'dhcplb-vm' is already running.
@@ -582,11 +584,11 @@ lab—creation, setup, test execution, and teardown—is managed by a simple
 ✅ Server test lab is running.
 ```
 
-- `make test-relay-v4`: Runs a DHCPv4 client in the relay lab.
-- `make test-relay-v6`: Runs a DHCPv6 client in the relay lab.
-- `make test-server-v4`: Runs a DHCPv4 client in the server lab.
-- `make test-server-v6`: Runs a DHCPv6 client in the server lab.
-- `make clean`: Tears down all namespaces, bridges, and processes.
+* `make test-relay-v4`: Runs a DHCPv4 client in the relay lab.
+* `make test-relay-v6`: Runs a DHCPv6 client in the relay lab.
+* `make test-server-v4`: Runs a DHCPv4 client in the server lab.
+* `make test-server-v6`: Runs a DHCPv6 client in the server lab.
+* `make clean`: Tears down all namespaces, bridges, and processes.
 
 This makes running complex integration tests as simple as a single command.
 
@@ -610,12 +612,12 @@ of namespaces. Your network is your oyster.
 
 ## Further Reading
 
-- An excellent [article on GitHub](https://github.com/frfahim/network-namespace)
+* An excellent [article on GitHub](https://github.com/frfahim/network-namespace)
   covering network namespaces.
-- As [Wikipedia correctly mentions](https://en.wikipedia.org/wiki/Linux_namespaces),
+* As [Wikipedia correctly mentions](https://en.wikipedia.org/wiki/Linux_namespaces),
   Linux supports other types of namespaces beyond networking (such as mount,
   process, and user namespaces).
-- The official [Linux man pages](https://man7.org/linux/man-pages/man7/namespaces.7.html)
+* The official [Linux man pages](https://man7.org/linux/man-pages/man7/namespaces.7.html)
   for namespaces.
-- Facebook engineering [blog post](https://engineering.fb.com/2019/05/28/data-infrastructure/dhcplb-server) on dhcplb
-- Facebook engineering [blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/) on extending dhcplb to work in server mode 
+* Facebook engineering [blog post](https://engineering.fb.com/2019/05/28/data-infrastructure/dhcplb-server) on dhcplb
+* Facebook engineering [blog post](https://engineering.fb.com/2016/09/13/data-infrastructure/dhcplb-an-open-source-load-balancer/) on extending dhcplb to work in server mode
