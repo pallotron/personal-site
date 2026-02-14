@@ -219,6 +219,11 @@ url = "/index.xml"
 title = ""
 
 
+# Hugo's JS minifier strips the "data" key from window.config, which breaks
+# Mermaid diagrams (the LoveIt theme stores diagram content there).
+[minify]
+disableJS = true
+
 # Markup related configuration in Hugo
 [markup]
 # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
