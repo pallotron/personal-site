@@ -24,13 +24,72 @@
     }
 }
 
-// Override summary border-bottom
+// Tiling grid layout for home page posts
 .home[data-home=posts] {
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
   .summary {
-    border-bottom: 1px dashed $single-link-color;
+    border: 1px solid $global-border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
 
     [theme=dark] & {
-      border-bottom: 1px dashed $single-link-color-dark;
+      border-color: $global-border-color-dark;
     }
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+
+      [theme=dark] & {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .featured-image-preview {
+      margin: 0;
+      padding: 0;
+      padding-top: 56.25%; // 16:9 aspect ratio
+    }
+
+    .single-title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      padding: 0 1rem;
+    }
+
+    .post-meta {
+      padding: 0 1rem;
+      font-size: 0.85rem;
+    }
+
+    .content {
+      padding: 0 1rem;
+      flex: 1;
+    }
+
+    .post-footer {
+      padding: 0.75rem 1rem;
+      margin-top: auto;
+
+      .post-tags a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// Responsive: single column on small screens
+@media screen and (max-width: 680px) {
+  .home[data-home=posts] .posts-grid {
+    grid-template-columns: 1fr;
   }
 }
