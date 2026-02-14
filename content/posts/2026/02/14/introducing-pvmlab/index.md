@@ -1,6 +1,6 @@
 ---
 title: "Introducing pvmlab: Your Local PXEboot Virtual Lab"
-date: 2026-01-14T08:00:00+01:00
+date: 2026-02-14T08:00:00+01:00
 draft: false
 tags: ["projects", "virtualization", "go", "networking", "pxeboot", "docker", "macOS"]
 featured_image: "logo.png"

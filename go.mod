@@ -1,4 +1,4 @@
-module github.com/pallotron/site
+module github.com/pallotron/personal-site
 
 go 1.18
 
