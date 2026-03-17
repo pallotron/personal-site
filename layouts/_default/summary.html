@@ -47,7 +47,7 @@
         {{ with .Params.featured_image }}
             {{ with $.Resources.Get . }}
                 {{ $resized := .Resize "200x" }}
-                <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image" style="border: solid">
+                <img src="{{ $resized.RelPermalink }}" alt="Resized Featured Image">
                 <br/>
             {{ end }}
         {{ end }}
