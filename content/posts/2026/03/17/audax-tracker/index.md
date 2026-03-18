@@ -53,7 +53,7 @@ touched them.
 So how did a 2004-era web developer end up shipping a React 19 app with
 TypeScript, Tailwind CSS v4, and Cloudflare Workers in 2026?
 
-**[Claude Code](https://claude.ai/claude-code).**
+**[Claude Code](https://claude.com/product/claude-code).**
 
 I used Claude Code as my pair programmer throughout this entire project. Not
 just for boilerplate or syntax lookups, but as a genuine collaborator. I would
