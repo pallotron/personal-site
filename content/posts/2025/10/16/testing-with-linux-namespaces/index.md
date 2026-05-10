@@ -1,5 +1,6 @@
 ---
 title: "Testing tricky network services with Linux Namespaces"
+description: "Using Linux network namespaces and veth pairs to build a reproducible integration test environment for DHCP and PXEboot services — no dedicated hardware lab required."
 date: 2025-10-16
 tags: ["linux", "networking", "testing", "dhcp", "dhcplb", "golang", "go", "macos", "lima", "network-namespaces", "veth", "ci-cd", "integration-testing"]
 featured_image: "linux-namespaces.png"

@@ -2,6 +2,7 @@
 date: "2025-08-10T08:08:35+01:00"
 draft: false
 title: "DNF'ing LEL25 and Lessons Learned"
+description: "My DNF on day one of London-Edinburgh-London 2025, an event that was ultimately cancelled for all 2,500 riders due to severe winds across northern England and Scotland."
 tags: ["cycling", "audax", "randonneuring", "ultra-cycling", "endurance-cycling", "ride-report", "lel25", "london-edinburgh-london", "dnf", "mason-cycles", "bike-packing"]
 featured_image: "lel.png"
 images: ["lel.png"]

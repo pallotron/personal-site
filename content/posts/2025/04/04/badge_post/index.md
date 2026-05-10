@@ -2,6 +2,7 @@
 date: "2025-04-01T16:07:33+01:00"
 draft: false
 title: "Badge Post"
+description: "After 14 years at Facebook and Meta, I handed in my badge and decided to take a proper break before figuring out what comes next."
 tags: ["career", "work", "meta", "facebook", "resignation", "sabbatical", "personal"]
 featured_image: "badge.jpg"
 ---
