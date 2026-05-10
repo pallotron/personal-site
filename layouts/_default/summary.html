@@ -51,11 +51,8 @@
                 <br/>
             {{ end }}
         {{ end }}
-
-        {{- with .Summary -}}
-            {{- dict "Content" . "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
-        {{- else -}}
-            {{- .Description | safeHTML -}}
+        {{- with .Description -}}
+            {{- . | safeHTML -}}
         {{- end -}}
     </div>
 

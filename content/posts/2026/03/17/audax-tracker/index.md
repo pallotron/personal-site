@@ -1,5 +1,6 @@
 ---
 title: "Building Audax Tracker: a Strava-powered awards dashboard for randonneurs"
+description: "Building a React and TypeScript web app that connects to Strava and automatically tracks brevet progress and audax award qualifications — with Claude Code as a pair programmer."
 date: 2026-03-17T08:00:00+01:00
 draft: false
 tags: ["projects", "cycling", "audax", "randonneuring", "react", "typescript", "strava", "cloudflare", "indexeddb", "side-project", "claude", "ai"]

@@ -1,5 +1,6 @@
 ---
 title: "Introducing pvmlab: Your Local PXEboot Virtual Lab"
+description: "pvmlab is a CLI tool that spins up a fully self-contained PXEboot virtual lab on macOS using QEMU, Docker, and Lima — for testing bare-metal provisioning without real hardware."
 date: 2026-02-14T08:00:00+01:00
 draft: false
 tags: ["projects", "virtualization", "go", "networking", "pxeboot", "docker", "macOS"]

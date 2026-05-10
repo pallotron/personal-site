@@ -2,6 +2,7 @@
 date: "2025-09-02T08:04:26+01:00"
 draft: false
 title: "End of fun-employment"
+description: "After a summer of cycling and time off, funemployment is over — I'm joining Crusoe AI for the next chapter."
 tags: ["career", "work", "tech", "crusoe", "new-job", "personal"]
 featured_image: "crusoe.jpeg"
 images: ["crusoe.jpeg"]

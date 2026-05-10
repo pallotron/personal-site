@@ -1,5 +1,6 @@
 ---
 title: "Building a Textual UI with Zero Experience Using AI Assistance"
+description: "Building a terminal UI for personal expense analysis using the Textual framework and AI assistance — with no prior knowledge of either."
 date: 2025-11-02
 tags:
   [

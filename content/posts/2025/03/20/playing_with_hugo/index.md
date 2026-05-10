@@ -2,6 +2,7 @@
 date = '2025-03-20T17:45:16Z'
 draft = false
 title = 'Playing with hugo'
+description = "Retiring a WordPress blog in favour of a statically generated Hugo site hosted on Cloudflare Pages — faster, more secure, and no VPS to worry about."
 tags = ["hugo", "gohugo", "wordpress", "static-site-generator", "cloudflare", "ci-cd", "github", "tech"]
 featured_image = 'hugo.png'
 +++

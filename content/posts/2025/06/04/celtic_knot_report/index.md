@@ -2,6 +2,7 @@
 date: "2025-06-04T10:08:35+01:00"
 draft: false
 title: "Celtic Knot 1000 Ride Report"
+description: "A ride report from the Celtic Knot brevet — 1000 km across Ireland on a brand new Mason Aspect Integrale, returning to long-distance audax after a quiet 2024."
 tags: ["cycling", "audax", "randonneuring", "ultra-cycling", "endurance-cycling", "ride-report", "celtic-knot", "ireland", "mason-cycles", "bike-packing"]
 featured_image: "route.jpg"
 images: ["route.jpg"]
